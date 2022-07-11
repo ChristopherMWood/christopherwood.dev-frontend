@@ -1,7 +1,7 @@
 /* eslint-disable */
-
-import "./styles.scss";
-import ProjectView from "../../components/projectView/projectView";
+import React from "react";
+import '../styles/pages/projects.scss'
+import GlobalNav from '../components/nav';
 
 const projects = [
   {
@@ -37,6 +37,7 @@ const projects = [
 export default function ProjectsPage() {
   return (
     <main className="page-container">
+      <GlobalNav />
       <div className="under-construction-container">
       <h2>This page is currently Under Construction</h2>
       <p>

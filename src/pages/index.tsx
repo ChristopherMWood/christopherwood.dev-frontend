@@ -1,18 +1,20 @@
-import './styles.scss'
-import githubLogo from '../../images/GitHub-Mark-Light-120px-plus.png';
-import linkedinLogo from '../../images/linkedin-light-logo.png';
-import exercismLogo from '../../images/exercism-purple-logo.png';
-import stackoverflowLogo from '../../images/stackoverflow-logo.png';
-
+import React from 'react';
+import '../styles/pages/index.scss'
+import githubLogo from '../images/github-logo.png';
+import linkedinLogo from '../images/linkedin-light-logo.png';
+import exercismLogo from '../images/exercism-purple-logo.png';
+import stackoverflowLogo from '../images/stackoverflow-logo.png';
+import GlobalNav from '../components/nav';
 
 function Home() {
   return (
     <div>
+      <GlobalNav />
       <div id="page-content">
         {/* <span style={{ whiteSpace: 'pre' }} ref={el} />
         <span style={{ whiteSpace: 'pre' }} ref={el2} /> */}
         <div id="front-page-banner-one">back-end developer at heart</div>
-        <div id="front-page-banner-two">full stack developer by trade</div>
+        <div id="front-page-banner-two">full-stack developer by trade</div>
         <div id="social-icons-container">
         <a
           className="App-link"
